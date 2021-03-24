@@ -1,12 +1,13 @@
 // *********************** 
 // PARTE 1 DA AULA PRATICA -> fazendo componente com javascript 
 // *********************** 
+document.getElementById("app2").innerHTML = "Esse título foi feito com Java Scripto :D "
 
-/*
-var container = document.getElementById("app");
+
+var container = document.getElementById("app3");
 var titulo = document.createElement("h1");
-titulo.innerHTML = "Esse título foi feito com Java Scripto :D "
-container.appendChild(titulo); */
+titulo.innerHTML= "Esse título foi feito em JSssss"
+container.appendChild(titulo);
 
 
 // até em cima, criando elementos sem react, só com JS!
