@@ -2,10 +2,12 @@
 // PARTE 1 DA AULA PRATICA -> fazendo componente com javascript 
 // *********************** 
 
-// var container = document.getElementById("app");
-// var titulo = document.createElement("h1");
-// titulo.innerHTML = "Esse título foi feito com Java Scripto *0* "
-// container.appendChild(titulo); 
+/*
+var container = document.getElementById("app");
+var titulo = document.createElement("h1");
+titulo.innerHTML = "Esse título foi feito com Java Scripto :D "
+container.appendChild(titulo); */
+
 
 // até em cima, criando elementos sem react, só com JS!
 
@@ -13,23 +15,23 @@
 // PARTE 2 DA AULA PRATICA -> criando com JSX
 // *********************** 
 
-/*
-var container = document.getElementById("app");
 
-function App() {
-    return (
-        <React.Fragment>
-            <h1>Esse título foi feito em React com JSX</h1>
-            <h2>Esse título foi feito em React com JSX</h2>
-        </React.Fragment>
-    );
-}
+// var container = document.getElementById("app");
+
+// function Titulos() {
+//     return (
+//         <React.Fragment>
+//             <h1>Este título foi feito em React com JSX</h1>
+//             <h2>Este subtítulo também foi feito em React com JSX!</h2>
+//         </React.Fragment>
+//     );
+// }
 
 
-ReactDOM.render(App(), container);
-*/
+// ReactDOM.render(Titulos(), container);
 
-// CONHECIMENTO NOVO:  componentes seguem o padrão PascalCase
+
+// CONHECIMENTO NOVO: componentes seguem o padrão PascalCase
 // CONHECIMENTO NOVO: funcoes seguem padrão camelCase
 // CONHECIMENTO NOVO: Só posso retornar um elemento JSX por componente
 
@@ -38,19 +40,19 @@ ReactDOM.render(App(), container);
 // PARTE 3 DA AULA PRATICA -> usando props
 // *********************** 
 
-/*
-var container = document.getElementById("app");
 
-function App(props) {
-    return (
-        <React.Fragment>
-            <h1>{props.titulo}</h1>
-            <h2>Esse título foi feito em React com JSX</h2>
-        </React.Fragment>
-    );
-}
+// var container = document.getElementById("app");
 
-ReactDOM.render(React.createElement(App,{titulo: "Esse título veio de uma prop"}, null), container);*/
+// function App(props) {
+//     return (
+//         <React.Fragment>
+//             <h1>{props.titulo}</h1>
+//             <h2>Este subtítulo foi feito em React com JSX!</h2>
+//         </React.Fragment>
+//     );
+// }
+
+// ReactDOM.render(React.createElement(App,{titulo: "Esse título veio de uma prop :)"}, null), container);
 
 
 // CONHECIMENTO NOVO: componentes podem receber propriedades
@@ -80,8 +82,8 @@ function App() {
 
 
 ReactDOM.render(React.createElement(App,null, null), container);
-
 */
+
 
 
 
@@ -96,8 +98,6 @@ var container = document.getElementById("app");
 function Contador(props) {
 
     
-    /*
-    
 
     let numero = 0
     
@@ -110,10 +110,15 @@ function Contador(props) {
         numero--;
         console.log("subtraiu = ", numero)
     }
+
     
+    
+    /*
     O código dentro dessas chaves não vai funcionar, 
     então usaremos o que está abaixo dela, começando aqui -->*/
     
+
+    /*
     const [numero, setNumero] = React.useState(0);
 
     function somar() {
@@ -128,9 +133,12 @@ function Contador(props) {
 
     /* <<-- terminando aqui*/
 
+    
+
+    
     return (
-        <React.Fragment>
-            <h1>{props.titulo}</h1>
+        <React.Fragment >
+            <h1 className="box">{props.titulo}</h1>
             <h2>{numero}</h2>
             <button onClick={somar}>+</button>
             <button onClick={subtrair}>-</button>
@@ -141,7 +149,7 @@ function Contador(props) {
 function App() {
     return(
         <React.Fragment>
-        <h1>Vote no seu preferido</h1>
+        <h1>Vote no seu preferido!</h1>
         <Contador titulo="React"/>
         <Contador titulo="Angular"/>
         <Contador titulo="Vue"/>
