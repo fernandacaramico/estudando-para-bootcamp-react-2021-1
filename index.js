@@ -2,7 +2,7 @@
 // PARTE 1 DA AULA PRATICA -> fazendo componente com javascript 
 // *********************** 
 document.getElementById("app2").innerHTML = "Esse título foi feito com Java Scripto :D "
-
+ alert("hello")
 
 var container = document.getElementById("app3");
 var titulo = document.createElement("h1");
@@ -138,7 +138,7 @@ function Contador(props) {
 
     
     return (
-        <React.Fragment >
+        <React.Fragment>
             <h1 className="box">{props.titulo}</h1>
             <h2>{numero}</h2>
             <button onClick={somar}>+</button>
