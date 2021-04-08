@@ -1,9 +1,9 @@
 import React from 'react';
 
-function Button(props) {
+function Button({children}) {
     return(
         <>
-        <button className="btn-green">{props.frase}</button>
+        <button className="btn-green">{children}</button>
     </>
     );
 }

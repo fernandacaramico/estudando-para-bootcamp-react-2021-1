@@ -6,8 +6,7 @@ import HomePage from './components/HomePage';
 function App() {
   return (
     <>
-    <NavBar />
-    <HomePage />
+    <p>adíos</p>
     </>
   );
 }
