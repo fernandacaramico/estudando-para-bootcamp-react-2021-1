@@ -15,13 +15,8 @@ function HomePage() {
                             <h3>Contribua e fique por dentro das novidades  </h3>
                         </div>
                         <div className="img-index"></div>
-<<<<<<< HEAD:pre-aula-02/src/components/HomePage.js
                         
                         <Button>Conhecer!</Button>
-=======
-
-                        <Button frase="Conheça agoraaaaa!" />
->>>>>>> refs/remotes/origin/main:pre-aula-02/src/pages/HomePage.js
                     </div>
                     <img src={imgIndex} alt="" className="index-img" />
                 </div>

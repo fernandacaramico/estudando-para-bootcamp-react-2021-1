@@ -5,13 +5,9 @@ import './assets/css/style.css';
 
 function App() {
   return (
-<<<<<<< HEAD
     <>
     <p>adíos</p>
     </>
-=======
-    <Music />
->>>>>>> refs/remotes/origin/main
   );
 }
 
