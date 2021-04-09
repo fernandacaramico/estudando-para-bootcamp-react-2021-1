@@ -16,7 +16,7 @@ function NotFound() {
                             <h3>A página que você procura não foi encontrada.</h3>
                         </div>
                         <div className="img-index"></div>
-                        <Button>Voltar</Button>
+                        <Button lado="left">Voltar</Button>
                     </div>
                     <img src={notFound} alt="" className="index-img" />
                 </div>

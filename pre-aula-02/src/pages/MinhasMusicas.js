@@ -9,7 +9,7 @@ function MinhasMusicas() {
             <NavBar />
             <div className="container">
                 <div className="filter">
-                    <Button>Adicionar</Button>
+                    <Button lado="right">Adicionar</Button>
                 </div>
             </div>
 

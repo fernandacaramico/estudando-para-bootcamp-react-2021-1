@@ -8,6 +8,7 @@ function Music() {
         <NavBar />
             <div className="container">
                 <div className="filter">
+                    <Button lado="right">Adicionar</Button>
                     <button className="btn-green right">Adicionar</button>
                 </div>
             </div>
