@@ -1,8 +1,23 @@
-import React from 'react';
-import NavBar from '../components/NavBar'
-import MusicCard from '../components/MusicCard'
+import React, { useEffect, useState } from 'react';
+import NavBar from '../components/NavBar';
+import MusicCard from '../components/MusicCard';
+import api from '../api';
 
 function Music() {
+
+    const [musics, setMusic] = useState([]);
+
+    useEffect(() => {
+        async function getMusics() {
+            const resposta = await api.get("/");
+            // console.log("RESPOSTA", resposta.data);
+            setMusic(resposta.data);
+        }
+        getMusics();
+    })
+
+    
+
     return (
         <>
         <NavBar />
@@ -14,12 +29,18 @@ function Music() {
 
             <div className="container">
                 <div className="music-boxes">
-                    <MusicCard />
-                    <MusicCard />
-                    <MusicCard />
-                    <MusicCard />
-                    <MusicCard />
-                    <MusicCard />
+
+
+                    {
+                        musics.map((music) => (
+
+                            <MusicCard nome={music.nome} genero={music.genero} ano={music.ano}/>
+                            )
+                        )
+                    }
+
+                    <MusicCard nome="nome" genero="genero" ano="ano"/>
+                    
                 </div>
 
             </div>
