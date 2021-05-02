@@ -15,8 +15,8 @@ function HomePage() {
                             <h3>Contribua e fique por dentro das novidades  </h3>
                         </div>
                         <div className="img-index"></div>
-
-                        <Button frase="Conheça agoraaaaa!" />
+                        
+                        <Button lado="right">Conhecer!</Button>
                     </div>
                     <img src={imgIndex} alt="" className="index-img" />
                 </div>
