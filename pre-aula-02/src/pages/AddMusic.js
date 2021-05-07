@@ -27,7 +27,7 @@ function AddMusic() {
             <input type="text" />
           </div>
           <div>
-            <Button frase="Adicionar"/>
+            <Button destino="/minhas-musicas" >Adicionar</Button>
           </div>
         </form>
         <img src={addMusicImg} alt="" />

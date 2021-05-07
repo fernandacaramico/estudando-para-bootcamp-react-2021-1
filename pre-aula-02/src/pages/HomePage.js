@@ -16,7 +16,7 @@ function HomePage() {
                         </div>
                         <div className="img-index"></div>
                         
-                        <Button lado="right">Conhecer!</Button>
+                        <Button lado="right" destino="/minhas-musicas">Conhecer!</Button>
                     </div>
                     <img src={imgIndex} alt="" className="index-img" />
                 </div>

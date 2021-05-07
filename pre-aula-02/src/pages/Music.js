@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import NavBar from '../components/NavBar';
+import Button from '../components/Button';
 import MusicCard from '../components/MusicCard';
 import api from '../api';
 
@@ -23,8 +24,7 @@ function Music() {
         <NavBar />
             <div className="container">
                 <div className="filter">
-                    <Button lado="right">Adicionar</Button>
-                    <button className="btn-green right">Adicionar</button>
+                    <Button lado="right" destino="/add-musica">Adicionar</Button>
                 </div>
             </div>
 

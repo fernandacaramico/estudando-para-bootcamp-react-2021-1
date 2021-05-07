@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import NotFound from './pages/NotFound';
 import './assets/css/reset.css';
 import './assets/css/style.css';
+import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
-    <NotFound />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
